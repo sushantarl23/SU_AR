@@ -80,7 +80,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-white/10">
+          <div className="md:hidden py-4 border-t border-gray-200">
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
@@ -90,7 +90,7 @@ const Header = () => {
                     e.preventDefault();
                     scrollToSection(link.href);
                   }}
-                  className="text-gray-300 hover:text-white py-2 transition-colors duration-300"
+                  className="text-gray-600 hover:text-gray-900 py-2 transition-colors duration-300"
                 >
                   {link.label}
                 </a>
