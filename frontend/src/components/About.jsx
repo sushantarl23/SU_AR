@@ -27,10 +27,10 @@ const About = () => {
     <section
       id="about"
       ref={sectionRef}
-      className="relative py-32 bg-[#0d0d1a] overflow-hidden"
+      className="relative py-32 bg-white overflow-hidden"
     >
       {/* Background Accent */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#16213e]/20 to-transparent" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-slate-50 to-transparent" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
@@ -45,10 +45,10 @@ const About = () => {
               About Me
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {aboutData.title}
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl">
+          <p className="text-xl text-gray-500 max-w-2xl">
             {aboutData.subtitle}
           </p>
         </div>
@@ -63,7 +63,7 @@ const About = () => {
             {aboutData.story.map((paragraph, index) => (
               <p
                 key={index}
-                className="text-gray-300 text-lg leading-relaxed"
+                className="text-gray-600 text-lg leading-relaxed"
               >
                 {paragraph}
               </p>
@@ -71,22 +71,22 @@ const About = () => {
 
             {/* Journey Markers */}
             <div className="flex flex-wrap gap-4 pt-6">
-              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
+              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200">
                 <MapPin className="w-4 h-4 text-[#dc143c]" />
-                <span className="text-sm text-gray-300">Simichaur, Gulmi</span>
+                <span className="text-sm text-gray-700">Simichaur, Gulmi</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
+              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200">
                 <GraduationCap className="w-4 h-4 text-[#dc143c]" />
-                <span className="text-sm text-gray-300">PhD Researcher</span>
+                <span className="text-sm text-gray-700">PhD Researcher</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
+              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200">
                 <Sparkles className="w-4 h-4 text-[#dc143c]" />
-                <span className="text-sm text-gray-300">New Zealand</span>
+                <span className="text-sm text-gray-700">New Zealand</span>
               </div>
             </div>
           </div>
 
-          {/* Stats Cards with Glassmorphism */}
+          {/* Stats Cards with Light Glassmorphism */}
           <div
             className={`transition-all duration-700 delay-400 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
@@ -96,12 +96,12 @@ const About = () => {
               {aboutData.highlights.map((stat, index) => (
                 <div
                   key={index}
-                  className="group relative p-8 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 hover:border-[#dc143c]/30 transition-all duration-500 hover:bg-white/[0.08]"
+                  className="group relative p-8 rounded-2xl bg-white border border-gray-200 shadow-sm hover:border-[#dc143c]/30 transition-all duration-500 hover:shadow-lg"
                 >
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#dc143c]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="relative flex items-center justify-between">
-                    <span className="text-gray-400 text-lg">{stat.label}</span>
-                    <span className="text-5xl font-bold text-white group-hover:text-[#dc143c] transition-colors duration-300">
+                    <span className="text-gray-500 text-lg">{stat.label}</span>
+                    <span className="text-5xl font-bold text-gray-900 group-hover:text-[#dc143c] transition-colors duration-300">
                       {stat.value}
                     </span>
                   </div>
