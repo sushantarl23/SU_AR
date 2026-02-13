@@ -20,20 +20,20 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0d0d1a]"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-gray-50 to-slate-100"
     >
       {/* Background Elements */}
       <div className="absolute inset-0">
-        {/* Gradient Orbs */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#16213e]/40 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#1a1a2e]/50 rounded-full blur-3xl animate-pulse delay-1000" />
+        {/* Subtle Gradient Orbs */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#dc143c]/5 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-slate-200/50 rounded-full blur-3xl animate-pulse delay-1000" />
         
         {/* Grid Pattern */}
         <div 
           className="absolute inset-0 opacity-[0.03]"
           style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)`,
             backgroundSize: '50px 50px'
           }}
         />
@@ -47,13 +47,13 @@ const Hero = () => {
           }`}
         >
           {/* Pre-heading */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm mb-8">
             <span className="w-2 h-2 bg-[#dc143c] rounded-full animate-pulse" />
-            <span className="text-sm text-gray-400">Sustaining the Digital Frontier</span>
+            <span className="text-sm text-gray-600">Sustaining the Digital Frontier</span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-6 tracking-tight">
             I am{' '}
             <span className="text-[#dc143c] relative">
               {personalInfo.brand}
@@ -62,10 +62,10 @@ const Hero = () => {
           </h1>
 
           {/* Sub-headline */}
-          <p className="text-xl md:text-2xl text-gray-300 mb-4 font-light">
+          <p className="text-xl md:text-2xl text-gray-700 mb-4 font-light">
             {personalInfo.name}
           </p>
-          <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-500 mb-12 max-w-2xl mx-auto">
             {personalInfo.tagline}
           </p>
 
@@ -86,7 +86,7 @@ const Hero = () => {
         >
           <button
             onClick={() => document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })}
-            className="flex flex-col items-center gap-2 text-gray-500 hover:text-white transition-colors duration-300 group"
+            className="flex flex-col items-center gap-2 text-gray-400 hover:text-gray-700 transition-colors duration-300 group"
           >
             <span className="text-xs uppercase tracking-widest">Scroll</span>
             <ChevronDown className="w-5 h-5 animate-bounce" />
@@ -95,7 +95,7 @@ const Hero = () => {
       </div>
 
       {/* Decorative Line */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
     </section>
   );
 };
