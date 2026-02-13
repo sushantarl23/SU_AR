@@ -33,11 +33,11 @@ const Expertise = () => {
     <section
       id="expertise"
       ref={sectionRef}
-      className="relative py-32 bg-[#0a0a14] overflow-hidden"
+      className="relative py-32 bg-slate-50 overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#16213e]/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/50 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -54,10 +54,10 @@ const Expertise = () => {
             </span>
             <span className="w-12 h-px bg-[#dc143c]" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             The Digital Frontier
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-500 max-w-2xl mx-auto">
             Navigating the intersection of research, innovation, and ethical technology
           </p>
         </div>
@@ -76,10 +76,10 @@ const Expertise = () => {
                 }`}
                 style={{ transitionDelay: `${index * 150 + 300}ms` }}
               >
-                {/* Glassmorphism Card */}
-                <div className="relative h-full p-8 rounded-3xl bg-white/[0.03] backdrop-blur-xl border border-white/10 hover:border-[#dc143c]/40 transition-all duration-500 hover:bg-white/[0.06] overflow-hidden">
+                {/* Light Glassmorphism Card */}
+                <div className="relative h-full p-8 rounded-3xl bg-white border border-gray-200 shadow-sm hover:border-[#dc143c]/40 transition-all duration-500 hover:shadow-xl overflow-hidden">
                   {/* Hover Glow Effect */}
-                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#dc143c]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#dc143c]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
                   {/* Content */}
                   <div className="relative z-10">
@@ -91,12 +91,12 @@ const Expertise = () => {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-2xl font-semibold text-white mb-4 group-hover:text-[#dc143c] transition-colors duration-300">
+                    <h3 className="text-2xl font-semibold text-gray-900 mb-4 group-hover:text-[#dc143c] transition-colors duration-300">
                       {item.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-gray-400 leading-relaxed mb-6">
+                    <p className="text-gray-500 leading-relaxed mb-6">
                       {item.description}
                     </p>
 
