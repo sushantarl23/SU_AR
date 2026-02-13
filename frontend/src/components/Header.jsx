@@ -40,7 +40,7 @@ const Header = () => {
               e.preventDefault();
               scrollToSection('#hero');
             }}
-            className="text-2xl font-bold tracking-wider text-white hover:text-[#dc143c] transition-colors duration-300"
+            className="text-2xl font-bold tracking-wider text-gray-900 hover:text-[#dc143c] transition-colors duration-300"
           >
             {personalInfo.brand}
           </a>
