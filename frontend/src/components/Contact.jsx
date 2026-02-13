@@ -68,12 +68,12 @@ const Contact = () => {
     <section
       id="contact"
       ref={sectionRef}
-      className="relative py-32 bg-[#0d0d1a] overflow-hidden"
+      className="relative py-32 bg-white overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#16213e]/20 rounded-full blur-3xl" />
-        <div className="absolute top-0 right-0 w-80 h-80 bg-[#1a1a2e]/30 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-slate-100/50 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-80 h-80 bg-[#dc143c]/5 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -90,10 +90,10 @@ const Contact = () => {
             </span>
             <span className="w-12 h-px bg-[#dc143c]" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Let's Build the Future
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-500 max-w-2xl mx-auto">
             Have an idea or opportunity? I'd love to hear from you.
           </p>
         </div>
@@ -105,23 +105,23 @@ const Contact = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            <div className="p-8 rounded-3xl bg-white/[0.03] backdrop-blur-xl border border-white/10">
+            <div className="p-8 rounded-3xl bg-slate-50 border border-gray-200 shadow-sm">
               {isSubmitted ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#dc143c]/20 flex items-center justify-center mb-4">
+                  <div className="w-16 h-16 rounded-full bg-[#dc143c]/10 flex items-center justify-center mb-4">
                     <CheckCircle className="w-8 h-8 text-[#dc143c]" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-white mb-2">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-2">
                     Message Sent!
                   </h3>
-                  <p className="text-gray-400">
+                  <p className="text-gray-500">
                     Thank you for reaching out. I'll get back to you soon.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-2">
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
                       Your Name
                     </label>
                     <Input
@@ -131,11 +131,11 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       placeholder="John Doe"
-                      className="w-full bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-[#dc143c]/50 focus:ring-[#dc143c]/20 rounded-xl h-12"
+                      className="w-full bg-white border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-[#dc143c]/50 focus:ring-[#dc143c]/20 rounded-xl h-12"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-2">
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
                       Email Address
                     </label>
                     <Input
@@ -145,11 +145,11 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       placeholder="john@example.com"
-                      className="w-full bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-[#dc143c]/50 focus:ring-[#dc143c]/20 rounded-xl h-12"
+                      className="w-full bg-white border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-[#dc143c]/50 focus:ring-[#dc143c]/20 rounded-xl h-12"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-2">
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
                       Your Message
                     </label>
                     <Textarea
@@ -159,7 +159,7 @@ const Contact = () => {
                       required
                       placeholder="Tell me about your project or idea..."
                       rows={5}
-                      className="w-full bg-white/5 border-white/10 text-white placeholder:text-gray-500 focus:border-[#dc143c]/50 focus:ring-[#dc143c]/20 rounded-xl resize-none"
+                      className="w-full bg-white border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-[#dc143c]/50 focus:ring-[#dc143c]/20 rounded-xl resize-none"
                     />
                   </div>
                   <Button
@@ -207,10 +207,10 @@ const Contact = () => {
           >
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-semibold text-white mb-4">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">
                   Connect With Me
                 </h3>
-                <p className="text-gray-400 mb-8">
+                <p className="text-gray-500 mb-8">
                   Follow my journey and stay updated on my latest projects and research.
                 </p>
               </div>
@@ -225,7 +225,7 @@ const Contact = () => {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center gap-4 p-4 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-[#dc143c]/30 hover:bg-white/[0.06] transition-all duration-300"
+                      className="group flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-gray-200 hover:border-[#dc143c]/30 hover:bg-white hover:shadow-md transition-all duration-300"
                     >
                       <div className="w-12 h-12 rounded-xl bg-[#dc143c]/10 flex items-center justify-center group-hover:bg-[#dc143c]/20 transition-colors duration-300">
                         {IconComponent && (
@@ -233,10 +233,10 @@ const Contact = () => {
                         )}
                       </div>
                       <div>
-                        <span className="text-white font-medium group-hover:text-[#dc143c] transition-colors duration-300">
+                        <span className="text-gray-900 font-medium group-hover:text-[#dc143c] transition-colors duration-300">
                           {link.name}
                         </span>
-                        <p className="text-sm text-gray-500">Follow on {link.name}</p>
+                        <p className="text-sm text-gray-400">Follow on {link.name}</p>
                       </div>
                     </a>
                   );
@@ -245,7 +245,7 @@ const Contact = () => {
 
               {/* Quote */}
               <div className="mt-12 p-6 rounded-2xl bg-[#dc143c]/5 border border-[#dc143c]/20">
-                <p className="text-gray-300 italic text-lg leading-relaxed">
+                <p className="text-gray-700 italic text-lg leading-relaxed">
                   "Innovation thrives at the intersection of curiosity and purpose."
                 </p>
                 <p className="text-[#dc143c] mt-3 font-medium">— ARSU</p>
