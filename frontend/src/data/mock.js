@@ -14,7 +14,7 @@ export const aboutData = {
   subtitle: "From the hills of Nepal to the cutting edge of cancer research in New Zealand.",
   story: [
     "My scientific journey began in Nepal, where I earned my Bachelor's in Pharmacy from Pokhara University, igniting a passion for medicinal chemistry that would shape my career.",
-    "After completing my Master's at Wonkwang University in South Korea, I pursued my PhD at the University of Canterbury, where I developed groundbreaking enantioselective synthesis methods for hydantoins — work recognized as a 'HOT Article' by Chemical Science.",
+    "After completing my Master's at Wonkwang University in South Korea, I pursued my PhD at the University of Canterbury, where I developed groundbreaking enantioselective synthesis methods for hydantoins.",
     "Today, as a Postdoctoral Fellow at the University of Otago, I'm developing cancer-targeted biorthogonal prodrugs — innovative drug delivery systems designed to selectively target cancer cells while minimizing harm to healthy tissue."
   ],
   highlights: [
