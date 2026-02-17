@@ -49,7 +49,7 @@ const Hero = () => {
           {/* Pre-heading */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm mb-8">
             <span className="w-2 h-2 bg-[#dc143c] rounded-full animate-pulse" />
-            <span className="text-sm text-gray-600">Sustaining the Digital Frontier</span>
+            <span className="text-sm text-gray-600">Medicinal Chemistry Researcher</span>
           </div>
 
           {/* Main Heading */}
@@ -63,7 +63,7 @@ const Hero = () => {
 
           {/* Sub-headline */}
           <p className="text-xl md:text-2xl text-gray-700 mb-4 font-light">
-            {personalInfo.name}
+            {personalInfo.name}, Ph.D.
           </p>
           <p className="text-lg md:text-xl text-gray-500 mb-12 max-w-2xl mx-auto">
             {personalInfo.tagline}
@@ -74,7 +74,7 @@ const Hero = () => {
             onClick={scrollToExpertise}
             className="bg-[#dc143c] hover:bg-[#b01030] text-white px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-[#dc143c]/25 hover:scale-105"
           >
-            Explore My Vision
+            Explore My Research
           </Button>
         </div>
 
