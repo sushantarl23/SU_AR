@@ -93,7 +93,7 @@ export const publicationsData = [
     title: "Impact of hospital pharmacist-delivered individualised pharmaceutical service intervention on clinical and patient-reported outcomes in patients with hypertension: a randomised controlled trial",
     authors: "Aryal S., et al.",
     journal: "Eur. J. Hosp. Pharm.",
-    year: "2020",
+    year: "2022",
     volume: "29, e12",
     link: "https://doi.org/10.1136/ejhpharm-2020-002512",
     image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=400&h=300&fit=crop"
@@ -101,9 +101,9 @@ export const publicationsData = [
   {
     title: "Health-care Professionals' Knowledge and Perception of Adverse Drug Reaction Reporting and Pharmacovigilance in a Tertiary Care Teaching Hospital of Nepal",
     authors: "Aryal S., et al.",
-    journal: "J. Diabetes Res.",
-    year: "2019",
-    volume: "2019",
+    journal: "Hosp. Pharm.",
+    year: "2020",
+    volume: "55(4), 233-240",
     link: "https://doi.org/10.1177/0018578719883796",
     image: "https://images.unsplash.com/photo-1585435557343-3b092031a831?w=400&h=300&fit=crop"
   },
