@@ -1,48 +1,136 @@
-// Mock data for ARSU Portfolio
+// Mock data for ARSU Portfolio - Based on CV
 
 export const personalInfo = {
   name: "Sushant Aryal",
   brand: "ARSU",
-  tagline: "PhD Researcher in New Zealand | Founder of NexFlip Nepal",
-  heroDescription: "Bridging academic excellence with digital innovation",
+  tagline: "Postdoctoral Fellow in Medicinal Chemistry | University of Otago, New Zealand",
+  heroDescription: "Pioneering cancer-targeted drug development through biorthogonal chemistry",
   email: "contact@arylsushant.com.np",
   location: "New Zealand"
 };
 
 export const aboutData = {
   title: "My Journey",
-  subtitle: "From the hills of Simichaur, Gulmi, to the research labs of New Zealand.",
+  subtitle: "From the hills of Nepal to the cutting edge of cancer research in New Zealand.",
   story: [
-    "My journey began in the serene landscapes of Simichaur, Gulmi, Nepal — where curiosity met opportunity.",
-    "Today, as a PhD researcher in New Zealand, I dedicate my work to developing sustainable digital ecosystems that prioritize both innovation and human trust.",
-    "The intersection of academic rigor, entrepreneurial spirit, and ethical technology drives everything I do."
+    "My scientific journey began in Nepal, where I earned my Bachelor's in Pharmacy from Pokhara University, igniting a passion for medicinal chemistry that would shape my career.",
+    "After completing my Master's at Wonkwang University in South Korea, I pursued my PhD at the University of Canterbury, where I developed groundbreaking enantioselective synthesis methods for hydantoins — work recognized as a 'HOT Article' by Chemical Science.",
+    "Today, as a Postdoctoral Fellow at the University of Otago, I'm developing cancer-targeted biorthogonal prodrugs — innovative drug delivery systems designed to selectively target cancer cells while minimizing harm to healthy tissue."
   ],
   highlights: [
-    { label: "Years of Research", value: "5+" },
-    { label: "Projects Delivered", value: "20+" },
-    { label: "Publications", value: "8" }
+    { label: "Publications", value: "5+" },
+    { label: "Conference Presentations", value: "6" },
+    { label: "Years of Research", value: "10+" }
   ]
 };
 
 export const expertiseData = [
   {
     id: 1,
-    title: "Sustainable Ecosystems",
-    description: "My PhD focus on building resilient and ethical digital infrastructures that can withstand the test of time while maintaining human-centric values.",
-    icon: "Leaf"
+    title: "Cancer-Targeted Prodrugs",
+    description: "Developing aryl azide-masked prodrugs for selective cancer cell targeting using the dTCO 'catch and release' activation model, with expertise in HPLC release studies.",
+    icon: "FlaskConical"
   },
   {
     id: 2,
-    title: "NexFlip Nepal",
-    description: "Founder of Nepal's next-gen marketplace and auction platform — revolutionizing how Nepalis buy, sell, and trade in the digital age.",
-    icon: "Rocket"
+    title: "Organic Synthesis",
+    description: "Specialized in enantioselective synthesis, chiral phosphoric acid catalysis, and development of novel synthetic procedures for complex molecular scaffolds like hydantoins.",
+    icon: "Atom"
   },
   {
     id: 3,
-    title: "Brand Strategy",
-    description: "Expertise in fusing Gen Z aesthetics with data-driven research to create compelling digital narratives that resonate and convert.",
-    icon: "Target"
+    title: "Analytical Chemistry",
+    description: "Proficient in time-course NMR kinetics, HPLC analysis, reaction optimization, and characterization of synthetic intermediates and final products.",
+    icon: "Microscope"
   }
+];
+
+export const educationData = [
+  {
+    degree: "Ph.D. in Organic Chemistry",
+    institution: "University of Canterbury",
+    location: "New Zealand",
+    year: "2020 - 2024",
+    thesis: "Enantioselective synthesis of hydantoins"
+  },
+  {
+    degree: "M.Pharm (Medicinal Chemistry)",
+    institution: "Wonkwang University",
+    location: "South Korea",
+    year: "2013 - 2015",
+    thesis: "Synthesis of highly hydrophilic fluorescent dyes and linkers"
+  },
+  {
+    degree: "B.Pharm",
+    institution: "Pokhara University",
+    location: "Nepal",
+    year: "2008 - 2012",
+    thesis: "Formulation of fast dissolving fexofenadine hydrochloride"
+  }
+];
+
+export const publicationsData = [
+  {
+    title: "Bioorthogonal Click-to-Release of Branched Pro-Fluorophores",
+    authors: "Brind, T., Lawer, A., Todd, T., Aryal, S., Hook, S. and Gamble, A.B.",
+    journal: "Chem. Eur. J.",
+    year: "2025",
+    volume: "31: e202501544"
+  },
+  {
+    title: "Enantioselective synthesis of hydantoins by chiral acid-catalysed condensation of glyoxals and ureas",
+    authors: "Aryal, S.; Hone, C. A.; Polson, M. I. J., Foley, D. J.",
+    journal: "Chem. Sci.",
+    year: "2023",
+    volume: "14, 7905",
+    highlight: "HOT Article (top ~2.5%)"
+  },
+  {
+    title: "Total phenolic content, flavonoid content and antioxidant potential of wild vegetables from western Nepal",
+    authors: "Aryal S., Baniya M.K., Danekhu K., et al.",
+    journal: "Plants",
+    year: "2019",
+    volume: "8, 96"
+  },
+  {
+    title: "Antipyretic, antinociceptive, and anti-inflammatory activities from Pogostemon benghalensis",
+    authors: "Aryal S., Adhikari B., Panthi K., et al.",
+    journal: "Medicines",
+    year: "2019",
+    volume: "6, 96"
+  },
+  {
+    title: "Concise and Scalable Synthesis of Xanthylentin",
+    authors: "Seo J.H., Mallik S.K., Aryal S., et al.",
+    journal: "Bull. Korean Chem. Soc.",
+    year: "2015",
+    volume: "36, 1957"
+  }
+];
+
+export const awardsData = [
+  {
+    title: "UC Research Student Publication Prize",
+    year: "2023",
+    institution: "University of Canterbury"
+  },
+  {
+    title: "Doctoral Scholarship",
+    year: "2020",
+    institution: "University of Canterbury",
+    duration: "3.2 years"
+  },
+  {
+    title: "Graduate Scholarship",
+    year: "2013",
+    institution: "Wonkwang University",
+    duration: "2.0 years"
+  }
+];
+
+export const affiliationsData = [
+  "Member, New Zealand Institute of Chemistry",
+  "Registered Pharmacist, Nepal Pharmacy Council"
 ];
 
 export const socialLinks = [
@@ -52,20 +140,21 @@ export const socialLinks = [
     icon: "Linkedin"
   },
   {
-    name: "Instagram",
-    url: "https://instagram.com/arsu",
-    icon: "Instagram"
+    name: "Google Scholar",
+    url: "https://scholar.google.com",
+    icon: "GraduationCap"
   },
   {
-    name: "Facebook",
-    url: "https://facebook.com/arsu",
-    icon: "Facebook"
+    name: "ORCID",
+    url: "https://orcid.org",
+    icon: "FileText"
   }
 ];
 
 export const navLinks = [
   { label: "Home", href: "#hero" },
   { label: "Journey", href: "#about" },
-  { label: "Expertise", href: "#expertise" },
+  { label: "Research", href: "#expertise" },
+  { label: "Publications", href: "#publications" },
   { label: "Contact", href: "#contact" }
 ];
