@@ -75,7 +75,9 @@ export const publicationsData = [
     authors: "Brind, T., Lawer, A., Todd, T., Aryal, S., Hook, S. and Gamble, A.B.",
     journal: "Chem. Eur. J.",
     year: "2025",
-    volume: "31: e202501544"
+    volume: "31: e202501544",
+    link: "https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/chem.202501544",
+    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=300&fit=crop"
   },
   {
     title: "Enantioselective synthesis of hydantoins by chiral acid-catalysed condensation of glyoxals and ureas",
@@ -83,28 +85,36 @@ export const publicationsData = [
     journal: "Chem. Sci.",
     year: "2023",
     volume: "14, 7905",
-    highlight: "HOT Article (top ~2.5%)"
+    highlight: "HOT Article (top ~2.5%)",
+    link: "https://pubs.rsc.org/en/content/articlelanding/2023/sc/d3sc01656k",
+    image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=300&fit=crop"
   },
   {
     title: "Total phenolic content, flavonoid content and antioxidant potential of wild vegetables from western Nepal",
     authors: "Aryal S., Baniya M.K., Danekhu K., et al.",
     journal: "Plants",
     year: "2019",
-    volume: "8, 96"
+    volume: "8, 96",
+    link: "https://doi.org/10.3390/plants8040096",
+    image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=400&h=300&fit=crop"
   },
   {
     title: "Antipyretic, antinociceptive, and anti-inflammatory activities from Pogostemon benghalensis",
     authors: "Aryal S., Adhikari B., Panthi K., et al.",
     journal: "Medicines",
     year: "2019",
-    volume: "6, 96"
+    volume: "6, 96",
+    link: "https://doi.org/10.3390/medicines6040096",
+    image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=300&fit=crop"
   },
   {
     title: "Concise and Scalable Synthesis of Xanthylentin",
     authors: "Seo J.H., Mallik S.K., Aryal S., et al.",
     journal: "Bull. Korean Chem. Soc.",
     year: "2015",
-    volume: "36, 1957"
+    volume: "36, 1957",
+    link: "https://doi.org/10.1002/bkcs.10417",
+    image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=400&h=300&fit=crop"
   }
 ];
 
