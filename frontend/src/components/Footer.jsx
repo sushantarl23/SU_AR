@@ -19,8 +19,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start">
-            <span className="text-2xl font-bold text-gray-900 mb-2">
-              {personalInfo.brand}
+            <span className="text-2xl font-bold mb-2">
+              <span className="text-[#dc143c]">SU</span>
+              <span className="text-gray-400">-</span>
+              <span className="text-gray-900">AR</span>
             </span>
             <p className="text-gray-500 text-sm">
               Medicinal Chemistry Researcher
