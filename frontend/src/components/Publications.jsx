@@ -62,40 +62,57 @@ const Publications = () => {
               <BookOpen className="w-5 h-5 text-[#dc143c]" />
               Selected Publications
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-6">
               {publicationsData.map((pub, index) => (
-                <div
+                <a
                   key={index}
-                  className="group p-6 rounded-2xl bg-slate-50 border border-gray-200 hover:border-[#dc143c]/30 hover:bg-white hover:shadow-md transition-all duration-300"
+                  href={pub.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block rounded-2xl bg-slate-50 border border-gray-200 hover:border-[#dc143c]/30 hover:bg-white hover:shadow-lg transition-all duration-300 overflow-hidden"
                 >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h4 className="text-gray-900 font-medium mb-2 group-hover:text-[#dc143c] transition-colors duration-300 leading-snug">
-                        {pub.title}
-                      </h4>
-                      <p className="text-sm text-gray-500 mb-2">
-                        {pub.authors}
-                      </p>
-                      <div className="flex items-center gap-3 flex-wrap">
-                        <span className="text-sm text-gray-600 font-medium">
-                          {pub.journal} ({pub.year})
-                        </span>
-                        <span className="text-sm text-gray-400">
-                          {pub.volume}
-                        </span>
-                        {pub.highlight && (
-                          <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-[#dc143c]/10 text-[#dc143c] text-xs font-medium">
-                            <Award className="w-3 h-3" />
-                            {pub.highlight}
-                          </span>
-                        )}
+                  <div className="flex flex-col sm:flex-row">
+                    {/* Publication Image */}
+                    <div className="sm:w-48 h-40 sm:h-auto flex-shrink-0 overflow-hidden">
+                      <img
+                        src={pub.image}
+                        alt={pub.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    
+                    {/* Publication Content */}
+                    <div className="flex-1 p-5">
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="flex-1">
+                          <h4 className="text-gray-900 font-medium mb-2 group-hover:text-[#dc143c] transition-colors duration-300 leading-snug line-clamp-2">
+                            {pub.title}
+                          </h4>
+                          <p className="text-sm text-gray-500 mb-2 line-clamp-1">
+                            {pub.authors}
+                          </p>
+                          <div className="flex items-center gap-3 flex-wrap">
+                            <span className="text-sm text-gray-600 font-medium">
+                              {pub.journal} ({pub.year})
+                            </span>
+                            <span className="text-sm text-gray-400">
+                              {pub.volume}
+                            </span>
+                          </div>
+                          {pub.highlight && (
+                            <span className="inline-flex items-center gap-1 px-2 py-1 mt-2 rounded-full bg-[#dc143c]/10 text-[#dc143c] text-xs font-medium">
+                              <Award className="w-3 h-3" />
+                              {pub.highlight}
+                            </span>
+                          )}
+                        </div>
+                        <div className="p-2 rounded-lg bg-white border border-gray-200 group-hover:border-[#dc143c]/30 group-hover:bg-[#dc143c]/10 transition-all duration-300">
+                          <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-[#dc143c] transition-colors duration-300" />
+                        </div>
                       </div>
                     </div>
-                    <button className="p-2 rounded-lg hover:bg-[#dc143c]/10 transition-colors duration-300 opacity-0 group-hover:opacity-100">
-                      <ExternalLink className="w-4 h-4 text-[#dc143c]" />
-                    </button>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
