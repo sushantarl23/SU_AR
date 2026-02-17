@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Leaf, Rocket, Target, ArrowRight } from 'lucide-react';
+import { FlaskConical, Atom, Microscope, ArrowRight } from 'lucide-react';
 import { expertiseData } from '../data/mock';
 
 const iconMap = {
-  Leaf: Leaf,
-  Rocket: Rocket,
-  Target: Target,
+  FlaskConical: FlaskConical,
+  Atom: Atom,
+  Microscope: Microscope,
 };
 
 const Expertise = () => {
@@ -50,15 +50,15 @@ const Expertise = () => {
           <div className="inline-flex items-center gap-3 mb-4">
             <span className="w-12 h-px bg-[#dc143c]" />
             <span className="text-[#dc143c] text-sm font-medium uppercase tracking-widest">
-              What I Do
+              Research Focus
             </span>
             <span className="w-12 h-px bg-[#dc143c]" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            The Digital Frontier
+            Areas of Expertise
           </h2>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-            Navigating the intersection of research, innovation, and ethical technology
+            Advancing medicinal chemistry through innovative synthesis and drug development
           </p>
         </div>
 
@@ -76,7 +76,7 @@ const Expertise = () => {
                 }`}
                 style={{ transitionDelay: `${index * 150 + 300}ms` }}
               >
-                {/* Light Glassmorphism Card */}
+                {/* Card */}
                 <div className="relative h-full p-8 rounded-3xl bg-white border border-gray-200 shadow-sm hover:border-[#dc143c]/40 transition-all duration-500 hover:shadow-xl overflow-hidden">
                   {/* Hover Glow Effect */}
                   <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#dc143c]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
