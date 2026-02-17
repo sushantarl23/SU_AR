@@ -40,9 +40,11 @@ const Header = () => {
               e.preventDefault();
               scrollToSection('#hero');
             }}
-            className="text-2xl font-bold tracking-wider text-gray-900 hover:text-[#dc143c] transition-colors duration-300"
+            className="text-2xl font-bold tracking-wider hover:opacity-80 transition-opacity duration-300"
           >
-            {personalInfo.brand}
+            <span className="text-[#dc143c]">SU</span>
+            <span className="text-gray-400">-</span>
+            <span className="text-gray-900">AR</span>
           </a>
 
           {/* Desktop Navigation */}
