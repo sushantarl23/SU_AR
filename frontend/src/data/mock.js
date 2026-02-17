@@ -90,6 +90,24 @@ export const publicationsData = [
     image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=300&fit=crop"
   },
   {
+    title: "Evaluation of pharmaceutical services and related factors associated with patient satisfaction",
+    authors: "Aryal S., et al.",
+    journal: "Eur. J. Hosp. Pharm.",
+    year: "2020",
+    volume: "29, e12",
+    link: "https://doi.org/10.1136/ejhpharm-2020-002512",
+    image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=400&h=300&fit=crop"
+  },
+  {
+    title: "Assessment of knowledge and practice of community pharmacy personnel on diabetes mellitus management in Kathmandu district",
+    authors: "Aryal S., et al.",
+    journal: "J. Diabetes Res.",
+    year: "2019",
+    volume: "2019",
+    link: "https://doi.org/10.1177/0018578719883796",
+    image: "https://images.unsplash.com/photo-1585435557343-3b092031a831?w=400&h=300&fit=crop"
+  },
+  {
     title: "Total phenolic content, flavonoid content and antioxidant potential of wild vegetables from western Nepal",
     authors: "Aryal S., Baniya M.K., Danekhu K., et al.",
     journal: "Plants",
