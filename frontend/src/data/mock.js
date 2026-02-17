@@ -85,7 +85,6 @@ export const publicationsData = [
     journal: "Chem. Sci.",
     year: "2023",
     volume: "14, 7905",
-    highlight: "HOT Article (top ~2.5%)",
     link: "https://pubs.rsc.org/en/content/articlelanding/2023/sc/d3sc01656k",
     image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=300&fit=crop"
   },
