@@ -2,7 +2,8 @@
 
 export const personalInfo = {
   name: "Sushant Aryal",
-  brand: "ARSU",
+  brand: "SU-AR",
+  brandParts: { su: "SU", dash: "-", ar: "AR" },
   tagline: "Postdoctoral Fellow in Medicinal Chemistry | University of Otago, New Zealand",
   heroDescription: "Pioneering cancer-targeted drug development through biorthogonal chemistry",
   email: "contact@arylsushant.com.np",
