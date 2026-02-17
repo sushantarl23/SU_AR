@@ -55,8 +55,10 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-6 tracking-tight">
             I am{' '}
-            <span className="text-[#dc143c] relative">
-              {personalInfo.brand}
+            <span className="relative">
+              <span className="text-[#dc143c]">SU</span>
+              <span className="text-gray-400">-</span>
+              <span className="text-gray-900">AR</span>
               <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#dc143c]/30 rounded-full" />
             </span>
           </h1>
