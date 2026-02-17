@@ -18,7 +18,7 @@ export const aboutData = {
     "Today, as a Postdoctoral Fellow at the University of Otago, I'm developing cancer-targeted biorthogonal prodrugs — innovative drug delivery systems designed to selectively target cancer cells while minimizing harm to healthy tissue."
   ],
   highlights: [
-    { label: "Publications", value: "5+" },
+    { label: "Publications", value: "7+" },
     { label: "Conference Presentations", value: "6" },
     { label: "Years of Research", value: "10+" }
   ]
