@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Send, Linkedin, Instagram, Facebook, CheckCircle } from 'lucide-react';
+import { Send, Linkedin, GraduationCap, FileText, CheckCircle } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -7,8 +7,8 @@ import { socialLinks } from '../data/mock';
 
 const iconMap = {
   Linkedin: Linkedin,
-  Instagram: Instagram,
-  Facebook: Facebook,
+  GraduationCap: GraduationCap,
+  FileText: FileText,
 };
 
 const Contact = () => {
@@ -68,11 +68,11 @@ const Contact = () => {
     <section
       id="contact"
       ref={sectionRef}
-      className="relative py-32 bg-white overflow-hidden"
+      className="relative py-32 bg-slate-50 overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-slate-100/50 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/50 rounded-full blur-3xl" />
         <div className="absolute top-0 right-0 w-80 h-80 bg-[#dc143c]/5 rounded-full blur-3xl" />
       </div>
 
@@ -91,10 +91,10 @@ const Contact = () => {
             <span className="w-12 h-px bg-[#dc143c]" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Let's Build the Future
+            Let's Collaborate
           </h2>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-            Have an idea or opportunity? I'd love to hear from you.
+            Interested in research collaboration or academic discussions? I'd love to connect.
           </p>
         </div>
 
@@ -105,7 +105,7 @@ const Contact = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            <div className="p-8 rounded-3xl bg-slate-50 border border-gray-200 shadow-sm">
+            <div className="p-8 rounded-3xl bg-white border border-gray-200 shadow-sm">
               {isSubmitted ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
                   <div className="w-16 h-16 rounded-full bg-[#dc143c]/10 flex items-center justify-center mb-4">
@@ -130,8 +130,8 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      placeholder="John Doe"
-                      className="w-full bg-white border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-[#dc143c]/50 focus:ring-[#dc143c]/20 rounded-xl h-12"
+                      placeholder="Dr. Jane Smith"
+                      className="w-full bg-slate-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-[#dc143c]/50 focus:ring-[#dc143c]/20 rounded-xl h-12"
                     />
                   </div>
                   <div>
@@ -144,8 +144,8 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      placeholder="john@example.com"
-                      className="w-full bg-white border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-[#dc143c]/50 focus:ring-[#dc143c]/20 rounded-xl h-12"
+                      placeholder="jane.smith@university.edu"
+                      className="w-full bg-slate-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-[#dc143c]/50 focus:ring-[#dc143c]/20 rounded-xl h-12"
                     />
                   </div>
                   <div>
@@ -157,9 +157,9 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       required
-                      placeholder="Tell me about your project or idea..."
+                      placeholder="I'm interested in discussing potential research collaboration..."
                       rows={5}
-                      className="w-full bg-white border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-[#dc143c]/50 focus:ring-[#dc143c]/20 rounded-xl resize-none"
+                      className="w-full bg-slate-50 border-gray-200 text-gray-900 placeholder:text-gray-400 focus:border-[#dc143c]/50 focus:ring-[#dc143c]/20 rounded-xl resize-none"
                     />
                   </div>
                   <Button
@@ -211,7 +211,7 @@ const Contact = () => {
                   Connect With Me
                 </h3>
                 <p className="text-gray-500 mb-8">
-                  Follow my journey and stay updated on my latest projects and research.
+                  Find me on academic networks and stay updated on my latest research and publications.
                 </p>
               </div>
 
@@ -225,7 +225,7 @@ const Contact = () => {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-gray-200 hover:border-[#dc143c]/30 hover:bg-white hover:shadow-md transition-all duration-300"
+                      className="group flex items-center gap-4 p-4 rounded-2xl bg-white border border-gray-200 hover:border-[#dc143c]/30 hover:shadow-md transition-all duration-300"
                     >
                       <div className="w-12 h-12 rounded-xl bg-[#dc143c]/10 flex items-center justify-center group-hover:bg-[#dc143c]/20 transition-colors duration-300">
                         {IconComponent && (
@@ -236,19 +236,24 @@ const Contact = () => {
                         <span className="text-gray-900 font-medium group-hover:text-[#dc143c] transition-colors duration-300">
                           {link.name}
                         </span>
-                        <p className="text-sm text-gray-400">Follow on {link.name}</p>
+                        <p className="text-sm text-gray-400">View profile</p>
                       </div>
                     </a>
                   );
                 })}
               </div>
 
-              {/* Quote */}
-              <div className="mt-12 p-6 rounded-2xl bg-[#dc143c]/5 border border-[#dc143c]/20">
-                <p className="text-gray-700 italic text-lg leading-relaxed">
-                  "Innovation thrives at the intersection of curiosity and purpose."
+              {/* Current Position */}
+              <div className="mt-8 p-6 rounded-2xl bg-[#dc143c]/5 border border-[#dc143c]/20">
+                <h4 className="text-gray-900 font-semibold mb-2">Current Position</h4>
+                <p className="text-gray-700 mb-1">Postdoctoral Fellow</p>
+                <p className="text-gray-500 text-sm">University of Otago, New Zealand</p>
+                <p className="text-gray-400 text-sm mt-2">
+                  Project: "Cancer targeted biorthogonal prodrugs"
                 </p>
-                <p className="text-[#dc143c] mt-3 font-medium">— ARSU</p>
+                <p className="text-gray-400 text-sm">
+                  Supervisor: A/Prof. Allan Gamble
+                </p>
               </div>
             </div>
           </div>
