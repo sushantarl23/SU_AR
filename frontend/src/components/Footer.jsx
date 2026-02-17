@@ -68,7 +68,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">
-            © 2026 | {personalInfo.brand} | Sushant Aryal, Ph.D.
+            © 2026 | <span className="text-[#dc143c]">SU</span><span className="text-gray-400">-</span><span className="text-gray-900">AR</span> | Sushant Aryal, Ph.D.
           </p>
           <p className="text-gray-400 text-sm flex items-center gap-1">
             Crafted with <Heart className="w-3 h-3 text-[#dc143c]" /> in New Zealand
