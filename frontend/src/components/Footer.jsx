@@ -1,11 +1,11 @@
 import React from 'react';
-import { Heart, ArrowUp, Linkedin, Instagram, Facebook } from 'lucide-react';
+import { Heart, ArrowUp, Linkedin, GraduationCap, FileText } from 'lucide-react';
 import { socialLinks, personalInfo } from '../data/mock';
 
 const iconMap = {
   Linkedin: Linkedin,
-  Instagram: Instagram,
-  Facebook: Facebook,
+  GraduationCap: GraduationCap,
+  FileText: FileText,
 };
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
               {personalInfo.brand}
             </span>
             <p className="text-gray-500 text-sm">
-              Sustaining the Digital Frontier
+              Medicinal Chemistry Researcher
             </p>
           </div>
 
@@ -66,7 +66,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">
-            © 2026 | {personalInfo.brand} | Sustaining the Digital Frontier.
+            © 2026 | {personalInfo.brand} | Sushant Aryal, Ph.D.
           </p>
           <p className="text-gray-400 text-sm flex items-center gap-1">
             Crafted with <Heart className="w-3 h-3 text-[#dc143c]" /> in New Zealand
