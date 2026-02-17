@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { MapPin, GraduationCap, Sparkles } from 'lucide-react';
-import { aboutData } from '../data/mock';
+import { MapPin, GraduationCap, FlaskConical, Award } from 'lucide-react';
+import { aboutData, affiliationsData } from '../data/mock';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -69,24 +69,42 @@ const About = () => {
               </p>
             ))}
 
+            {/* Professional Affiliations */}
+            <div className="pt-6">
+              <h4 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+                Professional Affiliations
+              </h4>
+              <div className="flex flex-wrap gap-3">
+                {affiliationsData.map((affiliation, index) => (
+                  <div 
+                    key={index}
+                    className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200"
+                  >
+                    <Award className="w-4 h-4 text-[#dc143c]" />
+                    <span className="text-sm text-gray-700">{affiliation}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             {/* Journey Markers */}
-            <div className="flex flex-wrap gap-4 pt-6">
+            <div className="flex flex-wrap gap-4 pt-4">
               <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200">
                 <MapPin className="w-4 h-4 text-[#dc143c]" />
-                <span className="text-sm text-gray-700">Simichaur, Gulmi</span>
+                <span className="text-sm text-gray-700">Nepal → Korea → New Zealand</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200">
                 <GraduationCap className="w-4 h-4 text-[#dc143c]" />
-                <span className="text-sm text-gray-700">PhD Researcher</span>
+                <span className="text-sm text-gray-700">Ph.D. Organic Chemistry</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200">
-                <Sparkles className="w-4 h-4 text-[#dc143c]" />
-                <span className="text-sm text-gray-700">New Zealand</span>
+                <FlaskConical className="w-4 h-4 text-[#dc143c]" />
+                <span className="text-sm text-gray-700">Postdoctoral Fellow</span>
               </div>
             </div>
           </div>
 
-          {/* Stats Cards with Light Glassmorphism */}
+          {/* Stats Cards */}
           <div
             className={`transition-all duration-700 delay-400 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
