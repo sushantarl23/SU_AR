@@ -90,7 +90,7 @@ export const publicationsData = [
     image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=300&fit=crop"
   },
   {
-    title: "Evaluation of pharmaceutical services and related factors associated with patient satisfaction",
+    title: "Impact of hospital pharmacist-delivered individualised pharmaceutical service intervention on clinical and patient-reported outcomes in patients with hypertension: a randomised controlled trial",
     authors: "Aryal S., et al.",
     journal: "Eur. J. Hosp. Pharm.",
     year: "2020",
@@ -99,7 +99,7 @@ export const publicationsData = [
     image: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=400&h=300&fit=crop"
   },
   {
-    title: "Assessment of knowledge and practice of community pharmacy personnel on diabetes mellitus management in Kathmandu district",
+    title: "Health-care Professionals' Knowledge and Perception of Adverse Drug Reaction Reporting and Pharmacovigilance in a Tertiary Care Teaching Hospital of Nepal",
     authors: "Aryal S., et al.",
     journal: "J. Diabetes Res.",
     year: "2019",
